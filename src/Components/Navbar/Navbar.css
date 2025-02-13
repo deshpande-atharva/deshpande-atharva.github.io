@@ -1,0 +1,46 @@
+.n-wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.n-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.fname{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.surname{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.n-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    width:max-content;
+
+
+}
+n-list{
+    flex: 10;
+}
+.n-list>ul{
+    display: flex;
+    gap:2rem;
+}
+.n-list>ul>li:hover{
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.n-button{
+    flex: 2;
+    width: 100px;
+    height:6vh;
+}

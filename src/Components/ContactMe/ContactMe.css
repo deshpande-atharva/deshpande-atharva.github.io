@@ -1,0 +1,67 @@
+.contactme {
+    background: black;
+    margin: 0;
+    padding: 50px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100vh;
+  }
+  
+  .name {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .name > span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .form-div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px; /* Limit the width of the form */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    color: white; /* White font for labels */
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 1rem;
+    color: white; /* White text inside input fields */
+    background-color: transparent; /* Transparent background */
+    border: none;
+    border-bottom: 2px solid white; /* Underline style */
+  }
+  
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Light gray placeholder text */
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none; /* Remove default focus outline */
+}
+  
+  

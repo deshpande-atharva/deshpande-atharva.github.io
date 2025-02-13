@@ -1,0 +1,83 @@
+/*  for carosoule on the right*/
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+:root
+{
+  --yellow: #F5C32C;
+    --orange : #FCA61F;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.App{
+    padding: 0.5rem 3.5rem;
+    overflow: hidden;
+    color: var(--black);    
+}
+
+/* general button class for buttons */
+.button{
+  border-radius: 10px;
+  border: none;
+  color:white;
+  font-size: 16px;
+  padding: 11px, 26px, 11px, 26px;
+  background: linear-gradient(to right, #C33764, #1D2671);
+  transition: background-color 1s;
+  box-shadow:  0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.button:hover, .button:focus{
+  background: white;
+  cursor: pointer;
+  color: white;
+  border: 1px solid var(#667EEA);
+  background-color: #e91e63;
+}
+.button-hireme{
+  border-radius: 10px;
+  border: none;
+  color:white;
+  font-size: 16px;
+  padding: 11px, 26px, 11px, 26px;
+  background: linear-gradient(to right, #C33764, #1D2671);
+  transition: background-color 1s;
+  box-shadow:  0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+  padding: 0.875em 2em;
+  background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+  font-family: inherit;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 1s;
+  place-content: center;
+
+}
+
+.button-hireme:hover,.button-hireme:focus{
+  background-color: #e91e63;
+  color: #fff;
+}
+  
+.btn {
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  transform: scale(0.7);
+  width: 30%;
+  border: 0;
+ }
+ .btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}

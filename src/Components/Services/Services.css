@@ -1,0 +1,103 @@
+.btn-1 {
+    width: 10rem;
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.glow-object {
+    position: absolute;
+    background: radial-gradient(circle, rgba(255, 182, 193, 0.3), rgba(255, 99, 71, 0.1)); /* Faint glow */
+    filter: blur(10px); /* Subtle blur for watercolor effect */
+    width: 100px; /* Example width */
+    height: 100px; /* Example height */
+    margin: auto; /* Centering the element inside its parent */
+    border-radius: 37%; /* Circle shape */
+    z-index: 1; /* Ensure it stays above other content */
+    pointer-events: none; /* Ensure it doesn’t interfere with other interactions */
+  }
+
+.services{
+    padding: 0 3rem 3rem;
+    display: flex;
+    height: 95vh;
+    margin-bottom: 5rem;
+    margin-top: 9rem;
+
+}
+.s-left{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.s-left>:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.s-left>:nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.s-left>:nth-child(3){
+    color: #636363;
+    font-size: 20px;
+}
+
+
+.s-right {
+    position: relative;
+    width:100%;
+    height: 500px;
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the carousel */
+    align-items: center; /* Vertically align the carousel */
+    overflow: hidden;
+}
+
+.slick-slider {
+    width: 100%;
+    display: flex;
+    gap:1rem;
+    justify-content: center; /* Center carousel items */
+}
+
+
+
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Carousel navigation arrows */
+.slick-prev,
+.slick-next {
+    z-index: 1; /* Ensures arrows are clickable */
+}
+
+/* Optional: Adjust card size in carousel */
+.Cards {
+    max-width: 20rem; /* Maximum width of cards */
+    max-height: 25rem; /* Maximum height of cards */
+    transition: transform 0.3s ease;
+}
+
+.Cards:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Optional: Styling for carousel title */
+.card-title {
+    font-weight: bold;
+    background: -webkit-linear-gradient(90deg, #000000, #1e3c72);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Vollkorn;
+    text-align: center;
+}

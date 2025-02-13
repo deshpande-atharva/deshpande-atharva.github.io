@@ -1,0 +1,39 @@
+.myCard {
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .myCard:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .myCard img {
+    object-fit: cover; /* Ensures images cover the entire space */
+  }
+  
+  .myCard .MuiTypography-h6 {
+    font-family: "Vollkorn", serif;
+    font-weight: bold;
+    background: -webkit-linear-gradient(90deg, #000000, #1e3c72);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+  }
+  
+  .myCard .MuiBox-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .myCard .MuiTypography-body1 {
+    color: var(--gray);
+    font-size: 16px;
+  }
+  

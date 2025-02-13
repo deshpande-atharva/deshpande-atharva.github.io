@@ -1,0 +1,116 @@
+
+.skills{
+    background: linear-gradient(to bottom, white, black);
+  margin: 0; /* Remove all margins */
+  padding: 50px; /* Optional: Add internal padding for spacing */
+  width: 100vw; /* Ensure it spans the entire viewport width */
+  position: relative; /* Prevent it from inheriting other layout margins */
+  left: 50%; /* Align the section to the center of the page */
+  transform: translateX(-50%); /* Correct for the left offset */
+  height: 100vh;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.name>:nth-child(1){
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.name>:nth-child(2){
+    font-weight: bold;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #FF6B6B, #4ECDC4);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+
+}
+.skills-scattered {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+}
+  
+.skill-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    min-width: 100px;
+    opacity: 0;
+    animation: floatIn 0.5s ease-out forwards,
+               float 3s ease-in-out infinite;
+    animation-delay: var(--delay), 0s;
+}
+
+.skill-box:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.skill-box svg {
+    color: white;
+    transition: transform 0.3s ease;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skill-box:hover svg {
+    transform: scale(1.2);
+}
+
+.skill-box span {
+    font-size: 0.9rem;
+    color: white;
+    opacity: 0.8;
+}
+
+/* Add different animation delays for more natural movement */
+.skill-box:nth-child(3n) {
+    animation-delay: var(--delay), 0.1s;
+}
+
+.skill-box:nth-child(3n+1) {
+    animation-delay: var(--delay), 0.2s;
+}
+
+.skill-box:nth-child(3n+2) {
+    animation-delay: var(--delay), 0.3s;
+}

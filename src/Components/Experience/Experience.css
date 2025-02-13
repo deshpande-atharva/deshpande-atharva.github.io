@@ -1,0 +1,132 @@
+.experience{
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+
+.eheading {
+    font-family: 'Playfair Display', serif;
+    text-align:start;
+    margin-bottom: 40px;
+  }
+
+  .first-line {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #484d5c;
+    margin-bottom: 0.5rem;
+  }
+
+  .second-line {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #FF6B6B, #4ECDC4);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+.glow-object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(221, 160, 221, 0.3), rgba(148, 0, 211, 0.1));
+    filter: blur(50px); /* Enhance blur for a glowing effect */
+    width: 400px; /* Larger area */
+    height: 400px; /* Larger area */
+    border-radius: 50%; /* Ensure circular shape */
+    z-index: -1; /* Place behind content */
+    pointer-events: none; /* Prevent interaction */
+    animation: float 10s ease-in-out infinite; /* Add subtle motion */
+  }
+  
+  /* Optional animation for floating effect */
+  @keyframes float {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-10px, 10px);
+    }
+  }
+  
+.verticle-line{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 6px;
+    height: 0;
+    transform: translateX(-50%);
+    background-color:#D8BFB2;
+    border-radius: 3px;
+    z-index: 1;
+    /* animation for the line */
+    animation: animateLine 4s linear forwards;
+}
+.timeline-icon:nth-child(1) {
+    animation-delay: 1s; /* Delay for the first icon */
+  }
+  
+  .timeline-icon:nth-child(2) {
+    animation-delay: 2s; /* Delay for the second icon */
+  }
+  
+  .timeline-icon:nth-child(3) {
+    animation-delay: 3s; /* Delay for the third icon */
+  }
+  
+  .timeline-icon:nth-child(4) {
+    animation-delay: 4s; /* Delay for the fourth icon */
+  }
+
+@keyframes animateLine {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    background-color: #D8BFB2; /* Match the line color */
+    border-radius: 50%;
+    color: #333;
+}
+.timeline-icon svg {
+    font-size: 70px; /* Adjust this value to change icon size */
+  }
+  
+  
+  
+  .timeline-icon:first-child {
+    top: -70%; /* Position first icon */
+  }
+  
+  .timeline-icon:nth-child(2) {
+    top: 30%; /* Position second icon */
+  }
+  
+  .timeline-icon:nth-child(3) {
+    top: 50%; /* Position third icon */
+  }
+  
+  .timeline-icon:nth-child(4) {
+    top: 70%; /* Position fourth icon */
+  }
