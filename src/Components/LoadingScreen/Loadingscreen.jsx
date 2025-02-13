@@ -4,14 +4,12 @@ import "./Loadingscreen.css";
 const greetings = [
   { text: "Hello", language: "English" },
   { text: "नमस्ते", language: "Hindi" },
-  { text: "नमस्कार", language: "Marathi" },
-  { text: "السلام عليكم", language: "Arabic" },
   { text: "Bonjour", language: "French" },
   { text: "こんにちは", language: "Japanese" },
   { text: "Hola", language: "Spanish" },
   { text: "Ciao", language: "Italian" },
   { text: "你好", language: "Chinese" },
-  { text: "안녕하세요", language: "Korean" },
+  { text: "नमस्कार", language: "Marathi" },
 ];
 
 const Loadingscreen = ({ onFinish }) => {
@@ -28,7 +26,7 @@ const Loadingscreen = ({ onFinish }) => {
 
       const timeout2 = setTimeout(() => {
         setCurrentIndex((prevIndex) => prevIndex + 1);
-      }, 500); // Change text after fade-out
+      }, 200); // Change text after fade-out changes every text
 
       return () => {
         clearTimeout(timeout1);
