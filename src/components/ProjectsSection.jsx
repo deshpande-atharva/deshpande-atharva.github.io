@@ -3,32 +3,33 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    title: "Cloud-Native Web Application Infrastructure",
+    description:
+      "AWS infrastructure with Terraform, auto-scaling, and zero-downtime CI/CD deployments.",
+    image: "/projects/clooud.jpg",
+    tags: ["AWS", "Terraform", "Docker", "GitHub Actions", "Packer"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/deshpande-atharva/Cloud-Project",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Student Tracking Platform",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+      "MERN stack platform with role-based access, JWT auth, and secure file uploads for 500+ users.",
+    image: "/projects/student.jpg",
+    tags: ["React", "Node.js", "MongoDB", "Express", "JWT", "AWS S3"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/deshpande-atharva/WebDesignProject",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Netflix Clone",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+      "Responsive streaming platform with TMDB API integration and optimized performance.",
+    image: "/projects/netflix.png",
+    tags: ["React", "JavaScript", "TMDB API", "CSS", "Responsive Design"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/deshpande-atharva/Netflic-Clone",
   },
 ];
 
@@ -100,7 +101,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/deshpande-atharva"
           >
             Check My Github <ArrowRight size={16} />
           </a>

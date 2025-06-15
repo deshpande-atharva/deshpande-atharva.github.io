@@ -3,25 +3,33 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+  { name: "JavaScript", level: 100, category: "frontend" },
+  { name: "React", level: 100, category: "frontend" },
+  { name: "TypeScript", level: 100, category: "frontend" },
+  { name: "Tailwind CSS", level: 100, category: "frontend" },
+  { name: "Next.js", level: 100, category: "frontend" },
+  { name: "Python", level: 100, category: "frontend" },
+  { name: "Golang", level: 100, category: "frontend" },
+  { name: "Shell Scripting", level: 100, category: "frontend" },
+  { name: "HTML/CSS", level: 100, category: "frontend" },
 
   // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "GraphQL", level: 60, category: "backend" },
+  { name: "Node.js", level: 100, category: "backend" },
+  { name: "Express", level: 100, category: "backend" },
+  { name: "MongoDB", level: 100, category: "backend" },
+  { name: "PostgreSQL", level: 100, category: "backend" },
+  { name: "Redis", level: 100, category: "backend" },
+  { name: "MySQL", level: 100, category: "backend" },
+  { name: "GraphQL", level: 100, category: "backend" },
+  { name: "Next.js", level: 100, category: "frontend" },
 
   // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  { name: "Git/GitHub", level: 100, category: "tools" },
+  { name: "Docker", level: 100, category: "tools" },
+  { name: "AWS", level: 100, category: "tools" },
+  { name: "Kubernetes", level: 100, categoty: "tools" },
+  { name: "Terraform", level: 100, categoty: "tools" },
+  { name: "Linux", level: 100, category: "tools" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
